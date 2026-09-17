@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>José de Arimateia | Obras & Poesia</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">José de Arimateia</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#biografia">Sobre</a></li>
+          <li><a href="#poemas">Poemas</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle">🌙 Modo Escuro</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Poesia que une Terras e Memórias</h1>
+      <blockquote>
+        "Entre as veredas do Piauí e os horizontes do Maranhão,<br>
+        o sertão canta na voz da alma."
+      </blockquote>
+      <a href="#poemas" class="hero-cta">Conheça as Obras</a>
+    </section>
+
+    <section id="biografia">
+      <h2 class="section-title">Sobre o Autor</h2>
+      <div class="bio-container">
+        <img
+          src="assets/img/escritor.png.jpeg"
+          alt="Foto de José de Arimateia"
+          class="bio-img"
+          onerror="this.outerHTML='<div class=\'bio-img-placeholder\'><span>📷</span><p>Foto do autor</p></div>'"
+        >
+        <div class="bio-text">
+          <!-- Cole aqui a sua biografia -->
+          <p>José de Arimateia é um poeta cuja escrita carrega a essência vibrante do Nordeste brasileiro. Nascido no Piauí, construiu laços profundos com o Maranhão, onde fixou residência e expandiu sua inspiração artística.</p>
+          <p>Sua obra retrata com sensibilidade as paisagens do sertão, os sentimentos da vida cotidiana, o amor e as saudades que atravessam suas memórias. Com linguagem marcante e afetuosa, ele perpetua a cultura e a identidade regional através dos seus versos.</p>
+          <p>Cada poema é um recorte de vida: da roça que arde em outubro ao silêncio das tardes que descem suaves. Entre o Piauí que o formou e o Maranhão que o acolheu, José de Arimateia encontrou sua voz — simples, honesta e profunda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="poemas">
+      <h2 class="section-title">Coletânea de Poemas</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-category="todos">Todos</button>
+        <button class="filter-btn" data-category="Sertão">Sertão</button>
+        <button class="filter-btn" data-category="Amor">Amor</button>
+        <button class="filter-btn" data-category="Memórias">Memórias</button>
+      </div>
+      <div class="poems-grid" id="poems-container"></div>
+    </section>
+
+  </main>
+
+  <div class="modal" id="poem-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal" aria-label="Fechar">&times;</button>
+      <h2 id="modal-title" class="section-title" style="margin-bottom: 0.5rem;"></h2>
+      <p id="modal-category" class="poem-category" style="text-align: center;"></p>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 José de Arimateia. Todos os direitos reservados.</p>
+    <p>Organizado e desenvolvido com dedicação à memória literária regional.</p>
+  </footer>
+
+  <script src="js/poemas-data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

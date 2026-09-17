@@ -1,0 +1,32 @@
+:root {
+  /* Paleta Regional: Sertão & Caatinga */
+  --bg-primary:    #fbf8f3;
+  --bg-secondary:  #f2ebd9;
+  --bg-card:       #ffffff;
+  --text-color:    #2c221e;
+  --text-muted:    #6b5c54;
+  --accent-color:  #c85a32;
+  --accent-hover:  #a34321;
+  --border-color:  #e2d7c5;
+
+  /* Tipografia */
+  --font-title: 'Playfair Display', Georgia, serif;
+  --font-poem:  'Lora', Georgia, serif;
+  --font-body:  'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Efeitos e Layout */
+  --radius:     8px;
+  --shadow:     0 4px 12px rgba(44, 34, 30, 0.08);
+  --transition: all 0.3s ease;
+}
+
+body.dark-theme {
+  --bg-primary:   #1c1815;
+  --bg-secondary: #28221d;
+  --bg-card:      #221c18;
+  --text-color:   #eae3d9;
+  --text-muted:   #b3a598;
+  --accent-color: #e07a5f;
+  --accent-hover: #f28f73;
+  --border-color: #3d332a;
+}
