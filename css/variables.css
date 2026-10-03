@@ -1,5 +1,4 @@
 :root {
-  /* Paleta Regional: Sertão & Caatinga */
   --bg-primary:    #fbf8f3;
   --bg-secondary:  #f2ebd9;
   --bg-card:       #ffffff;
@@ -9,12 +8,10 @@
   --accent-hover:  #a34321;
   --border-color:  #e2d7c5;
 
-  /* Tipografia */
   --font-title: 'Playfair Display', Georgia, serif;
   --font-poem:  'Lora', Georgia, serif;
   --font-body:  'Inter', system-ui, -apple-system, sans-serif;
 
-  /* Efeitos e Layout */
   --radius:     8px;
   --shadow:     0 4px 12px rgba(44, 34, 30, 0.08);
   --transition: all 0.3s ease;
