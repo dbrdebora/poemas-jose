@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria | José de Arimateia</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">José de Arimateia</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="poemas.html">Poemas</a></li>
+          <li><a href="galeria.html" class="active">Galeria</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">🌙 Leitura Noturna</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <span class="page-header-label">Fotografias</span>
+    <h1>Galeria do Poeta</h1>
+    <p>"O olhar que captura o sertão antes de versos."</p>
+  </div>
+
+  <main class="page-section">
+    <!--
+      ════════════════════════════════════════════════════
+      COMO ADICIONAR FOTOS À GALERIA:
+      ════════════════════════════════════════════════════
+      1. Coloque suas fotos na pasta: assets/images/galeria/
+      2. Copie e cole um bloco <div class="gallery-item"> abaixo
+      3. Troque o src pela sua foto e a legenda pelo texto desejado
+
+      Exemplo:
+      <div class="gallery-item reveal">
+        <img src="assets/images/galeria/nome-da-foto.jpg" alt="Descrição da foto" loading="lazy">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">Legenda da foto</p>
+        </div>
+      </div>
+      ════════════════════════════════════════════════════
+    -->
+
+    <div class="gallery-grid" id="gallery-grid">
+
+      <!-- FOTO 1 — substitua pelo caminho real da sua foto -->
+      <div class="gallery-item reveal">
+        <img src="assets/images/galeria/foto-1.jpg" alt="Foto 1" loading="lazy"
+          onerror="this.parentElement.style.background='var(--bg-secondary)'; this.style.display='none'">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">Paisagem do sertão</p>
+        </div>
+      </div>
+
+      <!-- FOTO 2 -->
+      <div class="gallery-item reveal reveal-delay-1">
+        <img src="assets/images/galeria/foto-2.jpg" alt="Foto 2" loading="lazy"
+          onerror="this.parentElement.style.background='var(--bg-secondary)'; this.style.display='none'">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">O poeta e sua terra</p>
+        </div>
+      </div>
+
+      <!-- FOTO 3 -->
+      <div class="gallery-item reveal reveal-delay-2">
+        <img src="assets/images/galeria/foto-3.jpg" alt="Foto 3" loading="lazy"
+          onerror="this.parentElement.style.background='var(--bg-secondary)'; this.style.display='none'">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">Raízes nordestinas</p>
+        </div>
+      </div>
+
+      <!-- Adicione mais fotos aqui seguindo o mesmo padrão -->
+
+       <div class="gallery-item reveal reveal-delay-2">
+        <img src="assets/images/galeria/foto-4.jpg" alt="Foto 4" loading="lazy"
+          onerror="this.parentElement.style.background='var(--bg-secondary)'; this.style.display='none'">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">Secas e suas consequências</p>
+        </div>
+      </div>
+
+       <!-- Adicione mais fotos aqui seguindo o mesmo padrão -->
+
+        <div class="gallery-item reveal reveal-delay-2">
+        <img src="assets/images/galeria/foto-5.jpg" alt="Foto 5" loading="lazy"
+          onerror="this.parentElement.style.background='var(--bg-secondary)'; this.style.display='none'">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">Secas e suas consequências</p>
+        </div>
+      </div>
+
+       <!-- Adicione mais fotos aqui seguindo o mesmo padrão -->
+
+           <div class="gallery-item reveal reveal-delay-2">
+        <img src="assets/images/galeria/foto-6.jpg" alt="Foto 6" loading="lazy"
+          onerror="this.parentElement.style.background='var(--bg-secondary)'; this.style.display='none'">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">Secas e suas consequências</p>
+        </div>
+      </div>
+
+      <!-- Adicione mais fotos aqui seguindo o mesmo padrão -->
+
+        <div class="gallery-item reveal reveal-delay-2">
+        <img src="assets/images/galeria/foto-7.jpg" alt="Foto 7" loading="lazy"
+          onerror="this.parentElement.style.background='var(--bg-secondary)'; this.style.display='none'">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">Secas e suas consequências</p>
+        </div>
+      </div>
+ <!-- Adicione mais fotos aqui seguindo o mesmo padrão -->
+
+ 
+        <div class="gallery-item reveal reveal-delay-2">
+        <img src="assets/images/galeria/foto-8.jpg" alt="Foto 8" loading="lazy"
+          onerror="this.parentElement.style.background='var(--bg-secondary)'; this.style.display='none'">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-caption">Secas e suas consequências</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Mensagem quando não há fotos -->
+    <div id="gallery-empty" style="display:none; text-align:center; padding:4rem 1rem;">
+      <p style="font-family:var(--font-poem); font-style:italic; color:var(--text-muted); font-size:1.1rem;">
+        As fotografias serão adicionadas em breve.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#8592;</button>
+      <img id="lightbox-img" src="" alt="">
+      <button class="lightbox-nav lightbox-next" id="lightbox-next">&#8594;</button>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 José de Arimateia. Todos os direitos reservados.</p>
+    <p>Organizado e desenvolvido com dedicação à memória literária regional.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poemas | José de Arimateia</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">José de Arimateia</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="poemas.html" class="active">Poemas</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><button id="theme-toggle" class="theme-toggle">🌙 Leitura Noturna</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <span class="page-header-label">Obra Completa</span>
+    <h1>Coletânea de Poemas</h1>
+    <p>"Do sertão que arde ao afeto que florece."</p>
+  </div>
+
+  <main class="page-section">
+    <div class="filters">
+      <button class="filter-btn active" data-category="todos">Todos</button>
+      <button class="filter-btn" data-category="Sertão">Sertão</button>
+      <button class="filter-btn" data-category="Amor">Amor</button>
+      <button class="filter-btn" data-category="Memórias">Memórias</button>
+    </div>
+    <div class="poems-grid" id="poems-container"></div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="poem-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal" aria-label="Fechar">&times;</button>
+      <div class="modal-top-bar"></div>
+      <div class="modal-header">
+        <p id="modal-category" class="poem-category"></p>
+        <h2 id="modal-title"></h2>
+      </div>
+      <div class="modal-authorship">
+        <span class="modal-authorship-name">José de Arimateia</span>
+        <span class="modal-authorship-dot"></span>
+        <span class="modal-authorship-year" id="modal-year"></span>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+
+      <!-- Galeria de miniaturas (oculta por padrão) -->
+      <div class="modal-gallery" id="modal-gallery">
+        <p class="modal-gallery-label">📸 Fotografias do poeta</p>
+        <div class="modal-gallery-grid" id="modal-gallery-grid"></div>
+      </div>
+
+      <!-- Player de áudio (oculto por padrão) -->
+      <div class="modal-audio" id="modal-audio">
+        <p class="modal-audio-label">🎙️ Ouça o autor recitar</p>
+        <audio id="modal-audio-player" controls preload="none">
+          Seu navegador não suporta o player de áudio.
+        </audio>
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-copyright">© 2026 José de Arimateia · Todos os direitos reservados</span>
+        <button class="print-btn" id="print-btn">🖨️ Imprimir</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 José de Arimateia. Todos os direitos reservados.</p>
+    <p>Organizado e desenvolvido com dedicação à memória literária regional.</p>
+  </footer>
+
+  <script src="js/poemas-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
